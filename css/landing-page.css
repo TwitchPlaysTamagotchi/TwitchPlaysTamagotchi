@@ -54,8 +54,12 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/tama-bg.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.intro-header p > a {
+  color: #ea168c;
 }
 
 .intro-message {
@@ -207,9 +211,9 @@ p.copyright {
     background-image:url("/img/checked_checkbox.png");
 }
 
-.meme ,.meme a:link,.meme a:visited 
+.meme ,.meme a:link,.meme a:visited
 {
-	animation: meme 2s ease infinite; 
+	animation: meme 2s ease infinite;
 
 }
 
