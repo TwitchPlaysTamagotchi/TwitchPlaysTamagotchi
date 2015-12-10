@@ -29,7 +29,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/flipclock.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
 </head>
 
 <body>
@@ -77,6 +77,9 @@
             <h1><img class="img-responsive" src="img/logo.png" alt="Twitch Plays Tamagotchi"></h1>
             <!-- <h1>Twitch Plays Tamagotchi!</h1> -->
             <h2>Will you care?</h2>
+            <hr class="intro-divider">
+<h3>The stream will start in:</h3>
+            <h1 id="countdown"></h1>
             <!-- <hr class="intro-divider">
             <h3>We're back!</h3> -->
             <hr class="intro-divider">
@@ -283,6 +286,14 @@ l[i].setAttribute("href", "mailto:" + t.value);
 })();
 /* ]]> */
 </script>-->
+ <script type="text/javascript">
+   $("#countdown")
+   .countdown(new Date("2015-12-10T18:00:00.000Z"), function(event) {
+     $(this).text(
+       event.strftime('%H:%M:%S')
+     );
+   });
+ </script>
 </body>
 
 </html>
